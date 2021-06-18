@@ -1,0 +1,46 @@
+{
+  "name": "homebridge-webrf-platform-plugin",
+  "version": "0.0.1",
+  "description": "WebRF platform plugin",
+  "main": "dist/index.js",
+  "scripts": {
+    "clean": "rimraf ./dist",
+    "build": "rimraf ./dist && tsc",
+    "prepublishOnly": "npm run build",
+    "postpublish": "npm run clean",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/beezischillin/homebridge-webrf-platform-plugin.git"
+  },
+  "bugs": {
+    "url": "https://github.com/beezischillin/homebridge-webrf-platform-plugin/issues"
+  },
+  "keywords": [
+    "homebridge",
+    "homebridge-plugin",
+    "plugin",
+    "rf"
+  ],
+  "author": "beez",
+  "engines": {
+    "homebridge": ">=1.0.0"
+  },
+  "license": "ISC",
+  "files": [
+    "LICENSE",
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "10.17.19",
+    "typescript": "^3.8.3",
+    "rimraf": "^3.0.2",
+    "homebridge": "^1.0.4"
+  },
+  "dependencies": {
+    "@types/lodash": "^4.14.170",
+    "axios": "^0.21.1",
+    "lodash": "^4.17.21"
+  }
+}
